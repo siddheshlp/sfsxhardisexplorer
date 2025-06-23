@@ -33,7 +33,7 @@ public with sharing class AccountTriggerHandler {
      * the close date set to the last day of the current month, and the stage set to 'Prospecting'.
      * @param newAccounts The list of new accounts for which to create opportunities.
      */
-    public void createOpportunityForAccounts(List<Account> newAccounts) {
+    public static void createOpportunityForAccounts(List<Account> newAccounts) {
         // Create a list to hold the new opportunities to be inserted.
         List<Opportunity> opportunitiesToCreate = new List<Opportunity>();
 
