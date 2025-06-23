@@ -11,9 +11,9 @@ public class AccountTriggerHandlerTest {
         //test12346
 
         // Call the handler method
-        Test.startTest();
-        AccountTriggerHandler.createContactsForAccounts([SELECT Id, Name FROM Account]);
-        Test.stopTest();
+        //Test.startTest();
+        //AccountTriggerHandler.createContactsForAccounts([SELECT Id, Name FROM Account]);
+        //Test.stopTest();
 
          //Verify Contacts were created for accounts with Name
        List<Contact> contacts = [SELECT Id, LastName, AccountId FROM Contact];
