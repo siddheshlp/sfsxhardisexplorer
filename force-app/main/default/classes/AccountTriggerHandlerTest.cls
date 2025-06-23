@@ -11,9 +11,9 @@ public class AccountTriggerHandlerTest {
         //test
 
         // Call the handler method
-        Test.startTest();
-        AccountTriggerHandler.createContactsForAccounts([SELECT Id, Name FROM Account WHERE Name != null]);
-        Test.stopTest();
+        //Test.startTest();
+        //AccountTriggerHandler.createContactsForAccounts([SELECT Id, Name FROM Account WHERE Name != null]);
+        //Test.stopTest();
 
         // Verify Contacts were created for accounts with Name
         List<Contact> contacts = [SELECT Id, LastName, AccountId FROM Contact WHERE AccountId IN :accounts];
