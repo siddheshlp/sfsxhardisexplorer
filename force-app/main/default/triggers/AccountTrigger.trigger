@@ -3,5 +3,5 @@ trigger AccountTrigger on Account (after insert) {
         system.debug('inside AccountTrigger after insert-----');
         AccountTriggerHandler.createContactsForAccounts(Trigger.New);
     }
-    //test12345678
+    //please deploy trigger first and then run the test class
 }
