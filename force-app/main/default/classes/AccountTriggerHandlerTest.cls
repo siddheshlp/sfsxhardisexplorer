@@ -8,7 +8,7 @@ public class AccountTriggerHandlerTest {
             new Account(Name = 'Test Account 2')
         };
         insert accounts;
-        //test12346
+        //pls deploy
 
         // Call the handler method
         //Test.startTest();
