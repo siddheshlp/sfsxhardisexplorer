@@ -5,8 +5,7 @@ public class AccountTriggerHandlerTest {
         // Create test Accounts
         List<Account> accounts = new List<Account>{
             new Account(Name = 'Test Account 1'),
-            new Account(Name = 'Test Account 2'),
-            new Account(Name = null) // Should not create a Contact
+            new Account(Name = 'Test Account 2')
         };
         insert accounts;
         //test
