@@ -16,7 +16,7 @@ public class AccountTriggerHandlerTest {
         //Test.stopTest();
 
          //Verify Contacts were created for accounts with Name
-       List<Contact> contacts = [SELECT Id, LastName, AccountId FROM Contact WHERE AccountId IN :accounts];
+       List<Contact> contacts = [SELECT Id, LastName, AccountId FROM Contact];
         System.assertEquals(2, contacts.size(), 'Two contacts should be created');
         for (Contact c : contacts) {
             System.assert(c.LastName == 'Test Account 1' || c.LastName == 'Test Account 2', 'Contact LastName should match Account Name');
