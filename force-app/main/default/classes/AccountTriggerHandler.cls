@@ -10,6 +10,7 @@ public with sharing class AccountTriggerHandler {
                 ));
             }
         }
+        //test
         if (!contactsToInsert.isEmpty()) {
             if (Schema.sObjectType.Contact.isCreateable()) {
                 insert contactsToInsert;

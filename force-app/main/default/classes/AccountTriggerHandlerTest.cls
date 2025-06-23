@@ -9,6 +9,7 @@ public class AccountTriggerHandlerTest {
             new Account(Name = null) // Should not create a Contact
         };
         insert accounts;
+        //test
 
         // Call the handler method
         Test.startTest();
